@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* declarar lasvariables */
+    --primaryColor: #D9C2AD;
+    --backgroundColor: #EDE4E5;
+    --textColor: #6e574a;
+}
+
+body {
+    width: 100vw;
+    height: auto;
+    background-color: var(--primaryColor);
+
+    /* background-image: url("/assets/portada.jpg"); */
+    /* box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    overflow-x: hidden;
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+
+}
+
+/* HEADER */
+.first {
+    border: 5px solid var(--textColor);
+    border-radius: 100px;
+    background-image: url("/assets/portada.jpg");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    /* font-size: 40px; */
+    justify-content: center;
+}
+
+.first h1 {
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 80px;
+    text-align: center;
+    color: var(--textColor);
+}
+
+.first h2 {
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: var(--textColor);
+    font-size: 30px;
+}
+
+.first h3 {
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: var(--textColor);
+}
+
+/* MAIN */
+
+.containerSection {
+    border: 5px solid var(--textColor);
+    border-radius: 50px;
+    width: 80vw;
+    /* centrar un contenedor */
+    margin: 80px auto;
+    display: flex;
+    background-color: var(--backgroundColor);
+
+}
+
+
+.title {
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    /* centrar texto */
+    text-align: center;
+    /* margen abajo */
+    margin-bottom: 30px;
+    color: var(--textColor);
+}
+
+.container {
+    width: 100%;
+    /* caja flexible */
+    display: flex;
+    /* centrar los elementos */
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.container p {
+    width: 60%;
+    color: var(--textColor);
+    font-size: 28px;
+    /* alinacion de texto */
+    text-align: justify;
+    text-align: center;
+    /* distacia entre lineas de texto */
+    line-height: 30px;
+    /* para el espacio entre letras */
+    letter-spacing: 1.5px;
+}
+
+.container img {
+    width: 40%;
+    border-radius: 200px;
+}
+
+.gallery {
+    /* border: solid var(--textColor); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: var(--primaryColor);
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 200px;
+}
+
+footer {
+    background-color: var(--primaryColor);
+    padding: 30px;
+    color: var(--textColor);
+    text-align: center;
+    font-size: 18px;
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
